@@ -154,15 +154,15 @@ class Quiz extends React.Component{
 
                 export default function Main() {
                   return (
-                    <>
-                    <Head>
-                    <title>AV女優診断</title>
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    </Head>
-                    <div className="w-9/12 h-screen bg-pink-600 rounded m-auto my-40 ">
-                      <h1 className="text-center text-pink-300 text-3xl pt-10">AV女優診断</h1>
-                      <Quiz/>
+                    <div>
+                      <Head>
+                        <title>AV女優診断</title>
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                      </Head>
+                      <div className="w-9/12 h-screen bg-pink-600 rounded m-auto my-40 ">
+                          <h1 className="text-center text-pink-300 text-3xl pt-10">AV女優診断</h1>
+                          <Quiz/>
+                      </div>
                     </div>
-                    <>
                   );
                 }
