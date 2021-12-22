@@ -5,10 +5,10 @@ import React, {
 
 let num =0; 
 const questions =[
-  {q:'おっぱいの大きさ',c:['巨乳','貧乳','気にしない']},
-  {q:'お尻の大きさ',c:['巨尻','貧尻','気にしない']},
-  {q:'女性の性格',c:['S','M','どちらでもない']},
-  {q:'タイプ',c:['痴女','控えめ','気にしない']},
+  {q:'食べたい食品',c:['肉','魚','野菜']},
+  {q:'食べたいvol.',c:['たくさん','少なめ','気にしない']},
+  {q:'高級感',c:['安いめ','高','どちらでもない']},
+  {q:'内装',c:['にぎやか','控えめ','気にしない']},
 ];
 
 
@@ -29,22 +29,22 @@ class Quiz extends React.Component{
 
   conc(){
      if(this.state.huge===questions.length){
-       return "julia"
+       return "牛角"
      }
      if(this.state.sharp===questions.length){
-       return "松本いちか"
+       return "しゃぶ葉"
      }
      if(this.state.marge===questions.length){
        return "わかるかボケ！！"
      }
      if(this.state.huge===questions.length-1 && this.state.sharp===questions.length-3){
-       return "深田えいみ"
+       return "ガスト"
      }
      if(this.state.huge===questions.length-2 && this.state.sharp===questions.length-2){
-       return "石川みお"
+       return "鳥貴族"
      }
      if(this.state.huge===questions.length-3 && this.state.sharp===questions.length-1){
-       return "さつきめい"
+       return "餃子の王将"
      }else{
        return"ちゃんこ"
      }
@@ -78,7 +78,7 @@ class Quiz extends React.Component{
 
   stop(){
     if(num===questions.length){
-        return "あなたにおすすめのav女優は"
+        return "あなたにおすすめの飲食店は"
     }else{
       return questions[num].q      
     }
@@ -156,11 +156,11 @@ class Quiz extends React.Component{
                   return (
                     <div>
                       <Head>
-                        <title>AV女優診断</title>
+                        <title>飲食店診断</title>
                         <meta name="viewport" content="width=device-width, initial-scale=1.0">
                       </Head>
                       <div className="w-9/12 h-screen bg-pink-600 rounded m-auto my-40 ">
-                          <h1 className="text-center text-pink-300 text-3xl pt-10">AV女優診断</h1>
+                          <h1 className="text-center text-pink-300 text-3xl pt-10">飲食店診断</h1>
                           <Quiz/>
                       </div>
                     </div>
