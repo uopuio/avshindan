@@ -140,7 +140,7 @@ class Quiz extends React.Component{
               {this.two()}
             </li>
          </ul>
-        <div id="check" className="hidden text-center bg-purple-100 w-76 h- mx-auto top-48 absolute inset-0 max-w-screen-xl max-h-full h-5/6 pt-52 text-3xl rounded h-full">あなたにおすすめのAV女優は{this.check()}です
+        <div id="check" className="hidden text-center bg-purple-100 w-76 h- mx-auto top-48 absolute inset-0 max-w-screen-xl max-h-full h-5/6 pt-52 text-3xl rounded h-full">あなたにおすすめの飲食店は{this.check()}です
           <div className="bg-green-500 hover:bg-green-300 text-white w-28 text-lg rounded mx-auto mt-5" onClick={()=>{
               this.rerend()
               }}>
