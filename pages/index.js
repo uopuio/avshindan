@@ -157,7 +157,7 @@ class Quiz extends React.Component{
                     <div>
                       <Head>
                         <title>飲食店診断</title>
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                      
                       </Head>
                       <div className="w-9/12 h-screen bg-pink-600 rounded m-auto my-40 ">
                           <h1 className="text-center text-pink-300 text-3xl pt-10">飲食店診断</h1>
