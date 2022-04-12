@@ -5,9 +5,9 @@ import React, {
 
 let num =0; 
 const questions =[
-  {q:'食べたい食品',c:['肉','魚','野菜']},
-  {q:'食べたいvol.',c:['たくさん','少なめ','気にしない']},
-  {q:'高級感',c:['安いめ','高','どちらでもない']},
+  {q:'おっぱいの大きさ',c:['巨乳','貧乳','気にしない']},
+  {q:'おしりの大きさ',c:['大きい','小さい','気にしない']},
+  {q:'女優の性格',c:['S','M','どちらでもない']},
   {q:'内装',c:['にぎやか','控えめ','気にしない']},
 ];
 
@@ -29,22 +29,22 @@ class Quiz extends React.Component{
 
   conc(){
      if(this.state.huge===questions.length){
-       return "牛角"
+       return "さとうしおり"
      }
      if(this.state.sharp===questions.length){
-       return "しゃぶ葉"
+       return "せがみ"
      }
      if(this.state.marge===questions.length){
        return "わかるかボケ！！"
      }
      if(this.state.huge===questions.length-1 && this.state.sharp===questions.length-3){
-       return "ガスト"
+       return "よしふみ"
      }
      if(this.state.huge===questions.length-2 && this.state.sharp===questions.length-2){
-       return "鳥貴族"
+       return "アニキ"
      }
      if(this.state.huge===questions.length-3 && this.state.sharp===questions.length-1){
-       return "餃子の王将"
+       return "パンチラ"
      }else{
        return"ちゃんこ"
      }
@@ -78,7 +78,7 @@ class Quiz extends React.Component{
 
   stop(){
     if(num===questions.length){
-        return "あなたにおすすめの飲食店は"
+        return "あなたにおすすめのAV女優は"
     }else{
       return questions[num].q      
     }
@@ -156,7 +156,7 @@ class Quiz extends React.Component{
                   return (
                     <div>
                       <Head>
-                        <title>飲食店診断</title>
+                        <title>AV女優診断</title>
                       
                       </Head>
                       <div className="w-9/12 h-screen bg-pink-600 rounded m-auto my-40 ">
